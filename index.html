@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<type html>
 <html>
 <head>
 <meta charset="UTF-8">
@@ -15,8 +15,20 @@
 
 .content {
   text-align: center;
-  font-size: 150px;
+  font-size: 125px;
   font-weight: bold;
+}
+
+img {
+    display: inline-block;
+    width: 35%; 
+    height: auto;
+}
+
+@media (max-width: 600px) {
+  img {
+    width: 100%; 
+  }
 }
   
 </style>
@@ -24,8 +36,9 @@
 </head>
 
 <body>
-<div class="elonmask">
-<img src="elonmaskc.jpg" alt="Elon Mask" class="mask">
+<div class="elonmask" >
+<img src="elonmaskc.jpg" alt="Elon Mask" class="mask" width: 100%;
+    height: auto>
 </div>
 
 <div class="content">
