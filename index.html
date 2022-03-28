@@ -3,47 +3,67 @@
 <head>
 <meta charset="UTF-8">
 <title>Just A Elon Mask</title>
-<style>
-.mask {
-  max-width: 50%;
-  max-height: 50%;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
 
+
+<style>
+
+p {
+ font-size: 90px;
+ font-weight: bold;
 }
 
-.content {
+body {
+    padding:0;
+    margin:0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.flex-container {
+  display: flex;
+  flex-direction: row;
+  font-size: 30px;
   text-align: center;
-  font-size: 125px;
-  font-weight: bold;
+}
+
+.flex-item-left {
+  padding: 10px;
+  flex: 40%;
+}
+
+.flex-item-right {
+  flex: 60%;
+}
+
+/* Responsive layout - makes a one column-layout instead of two-column layout */
+@media (max-width: 800px) {
+  .flex-container {
+    flex-direction: column;
+  }
 }
 
 img {
-    display: inline-block;
-    width: 35%; 
-    height: auto;
+    max-width: 100vh; 
+    height: 100vh;
 }
 
-@media (max-width: 600px) {
-  img {
-    width: 100%; 
-  }
-}
-  
 </style>
 
 </head>
 
 <body>
-<div class="elonmask" >
-<img src="elonmaskc.jpg" alt="Elon Mask" class="mask" width: 100%;
-    height: auto>
+
+<div class="flex-container">
+
+<div class="flex-item-right" style="text-align: center;">
+<img src="elonmaskc.jpg" alt="Elon Mask" class="mask" center center no-repeat>
 </div>
 
-<div class="content">
-
-  <p>JUST</br>A</br>ELON</br>MASK</p>
+<div class="flex-item-left" style="text-align: left;">
+<p>JUST</br>A</br>ELON</br>MASK</p>
+</div>
 
 </div>
 
