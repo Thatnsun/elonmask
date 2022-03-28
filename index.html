@@ -2,20 +2,31 @@
 <html>
 <head>
 <meta charset="UTF-8">
+<meta name="Elonmask">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Just A Elon Mask</title>
 
 
 <style>
 
-p {
- font-size: 90px;
- font-weight: bold;
-}
-
 body {
     padding:0;
     margin:0;
+    user-select: none;
 }
+
+p {
+ font-size: 14vw;
+ font-weight: bold;
+ color: #0e0e0e;
+ line-height: 0.78em;
+}
+
+img {
+    max-width: 90vw; 
+    max-height: 95vh;
+}
+
 
 * {
   box-sizing: border-box;
@@ -24,49 +35,47 @@ body {
 .flex-container {
   display: flex;
   flex-direction: row;
-  font-size: 30px;
-  text-align: center;
 }
 
 .flex-item-left {
-  padding: 10px;
-  flex: 40%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  flex: 45%;
+  height: 100vh;
 }
 
 .flex-item-right {
-  flex: 60%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  flex: 55%; 
 }
 
-/* Responsive layout - makes a one column-layout instead of two-column layout */
-@media (max-width: 800px) {
+@media (max-width: 1400px) {
   .flex-container {
     flex-direction: column;
   }
 }
 
-img {
-    max-width: 100vh; 
-    height: 100vh;
-}
-
 </style>
-
 </head>
 
 <body>
 
 <div class="flex-container">
 
+<div class="flex-item-left" style="text-align: right;">
+<p>JUST<br>A<br>ELON<br>MASK</p>
+</div>
+
 <div class="flex-item-right" style="text-align: center;">
-<img src="elonmaskc.jpg" alt="Elon Mask" class="mask" center center no-repeat>
-</div>
-
-<div class="flex-item-left" style="text-align: left;">
-<p>JUST</br>A</br>ELON</br>MASK</p>
+<img src="elonmask.jpg" alt="Elon Mask" class="mask">
 </div>
 
 </div>
-
 
 </body>
 </html>
